@@ -1,0 +1,44 @@
+header {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 0px;
+}
+
+body {
+    text-align: center;
+    margin: 0px;
+}
+
+h1 {margin: 0px;
+    position: sticky;
+    top: 0;}
+
+nav {display: block;
+    list-style: none;
+}
+
+ul {
+    text-align: center;
+    margin: auto;
+}
+
+    li {display: inline;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+    text-shadow: 0px 1px 5px black;
+}
+
+p {
+    font-size: 100px;
+}
+
