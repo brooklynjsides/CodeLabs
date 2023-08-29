@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hello World
+    <script>
+       // console.log("Hello");
+
+       //  var test = 'using var';  <-- no one uses var, its outdated
+       // let test2 = 'using let';
+       // const test3 = 'using const';
+       //  console.log(test3);
+
+       // '' and "" used for strings. `` used for string variables.
+        // : add value to variables
+       // [] <-- used for arrays
+       //{} <-- used for objects
+
+       // True and False are "booleans"
+
+       //let array1 = []
+
+       // let object1 = {
+       // name: 'Brooklyn'
+       // }
+
+       // let x = 8;
+       // let y = 9;
+       // console.log(x + y);
+
+       // floats are decimals
+       //all numbers are float, 1 = 1.0
+
+       // let person = { object is person
+        // name: 'cook', varaible name is cook
+        // age: 21,  // var age is 21
+       // }
+       // console.log(person.name) <-- how to access value for the variable "name" in the object "person". (person.name) is called "dot notation"
+
+       // let people = ['james', 'jerry'];
+       // console.log(people[1])  <-- arrays start at 0 so in this array 0 would be james and 1 would be jerry
+
+       // let people = [ {name: 'tom' }];       
+       //console.log(people[0].name); <-- people[0].name should log 'tom'
+
+      // let sandwich = {
+       // bread: 'White',
+       // protein: 'Turkey',
+       // pickles: {
+       //     type: 'dill',
+       // },
+       // condiments: ['Mayo', 'Ketchup'],
+      // }
+
+
+       //let sandwichDescription = 'This is a sandwich with ' + sandwich.bread + ' bread and ' + sandwich.protein + '.'
+
+       // let sandwichDescription = `This is a sandwich with ${sandwich.bread} bread`; // <--use `` (backticks) to use variables in a string
+
+       // console.log(sandwich.pickles.type) <-- dot notation
+
+      // let person = {
+      //  name: 'Brooklyn',
+      //  age: 21,
+      //  family: ['Mom', 'Dad', 'cousin'],
+      // };
+
+      // console.log(person.family[1]);
+
+      // strings that are just numbers turn are boiled down to integers
+
+        //let x = 5;
+        //let y = 6;
+        //console.log(x + ' days'); <--will log "5 days"
+
+        // console.groupCollapsed('Add')
+        // console.log('adding')
+        // console.groupEnd();
+        // ^ creates groups of console logs under the group name "Add", "adding" will be inside "add"
+
+        //console.log(5 > 4) <--equals true
+
+        //console.log(5 == '5') will be true bc '5' boils to a number and 5 = 5
+
+        //console.log(5 === '5') will be false bc '5' is a string. === is ABSOLUTE EQUALS
+
+        //console.log(5 != '5') will be false bc != means does not equal and 5 does = 5
+
+        //console.log(5 !== '5') will be true bc !== means does not ABSOLUTE EQUAL and 5 does not absoulutey equal the string of '5'
+
+        //let value = true
+        //console.log(Boolean(value))
+        //checks if something is truthy or falsey. strings will log true by default, null or undefined will log false
+
+        //let truthy = true
+        //let falsey = false
+
+        //console.log(truthy && falsey)
+
+        // && will combine things
+        //true + false will always be false
+
+       // let student = {
+         //   name: 'Jerry',
+           // graduated: false,
+          //  age: 22,  
+        // };
+
+        //if (student.name !== 'Jerry') {
+          //  console.log('Success')
+        //} else {
+          //  console.log('Denied')
+        //}
+
+         //   if (student.graduated) {
+          //      console.log('Congrats')
+          //  } else if (student.age < 20) {
+          //      console.log('Youre young')
+          //  } else {console.log('hey jerry')}
+
+         // if (student.graduated || (student.age < 22 && student.name !== 'Jerry')) {
+         //   console.log('you are not jerry')
+       // }  else { console.log('hey jerry')
+    // }       
+        // || means "or", used to compare two or variables
+
+        let classroom = ['Tammy', 'John', 'Carl'];
+
+    //    for (let i = 0; i < classroom.length;i++) {
+      //      console.log(classroom[i]);
+        //}
+
+        // Tammy John and Carl are elements, lots of elements in JS
+
+       // classroom.forEach((element) => {
+         //   console.log(element);
+        //})
+
+        for (let idx in classroom) {
+            console.log(classroom[idx]);
+        }
+
+        ///^^^ 3 different ways of doing the same thing
+
+    </script>
+</body>
+</html>

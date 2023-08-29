@@ -1,0 +1,15 @@
+.wine {max-width: 500px;
+height: 750px;
+}
+
+@media screen and (max-width: 750px) { 
+    .car {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+.wine {
+    display: none;
+} 
+}

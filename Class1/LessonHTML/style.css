@@ -1,0 +1,17 @@
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color:orange;
+}
+
+.box {
+    background-color: darkred;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 50px;
+    border: 10px solid yellow;
+}

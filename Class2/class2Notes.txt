@@ -1,0 +1,7 @@
+Look up flexbox videos
+
+
+bootstrapCDN
+tailwindcss
+
+understand media queries
