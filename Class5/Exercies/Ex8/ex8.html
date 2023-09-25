@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function setupCounter() {
+        let count = 0;
+        return function () {
+          if (count < 3) {
+            count++;
+            console.log(count);
+          } else {
+            count = 0;
+            console.log(count);
+          }
+        };
+      }
+      const counter = setupCounter();
+      counter();
+      counter();
+      counter();
+      counter();
+      counter();
+      counter();
+      counter();
+      counter();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+callbacks go inside event listeners/ queuryselectors
+
+getElementsById/Class will get all elements and put them in an array.
+
+button.addeventlistener("name", //=> {} or function//) 
+
+onclick becomes clcik in JS

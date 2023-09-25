@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      person = {
+        firstName: "Brooklyn",
+        lastName: "Sides",
+      };
+      person.greet = function () {
+        console.log(`Hello, ${this.firstName} ${this.lastName}`);
+      };
+
+      person.greet();
+
+      ////////////////
+
+      class Person2 {
+        constructor(firstN, lastN) {
+          this.firstN = "Cook";
+          this.lastN = "lyn";
+        }
+
+        get fullName() {
+          return this.nameAdd;
+        }
+
+        nameAdd() {
+          return this.firstN + "" + this.lastN;
+        }
+      }
+
+      let myWholeName = new Person2("cook", "lyn");
+      console.log(myWholeName.nameAdd());
+
+      let myWholeName2 = new Person2(this.cook, "Sides");
+      console.log(myWholeName2.nameAdd());
+    </script>
+  </body>
+</html>

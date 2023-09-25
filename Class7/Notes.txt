@@ -1,0 +1,4 @@
+study callbacks
+study memozations, that video in the prelesson notes was good
+
+spread will take args and spread them apart

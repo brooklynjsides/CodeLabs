@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let globalVar = "Global";
+
+      function modifyGlobal() {
+        let globalVar = "Modified Global";
+        console.log(globalVar);
+      }
+
+      function localScopeTest() {
+        let globalVar = "Global but its actually local";
+        console.log(globalVar);
+      }
+
+      modifyGlobal();
+      localScopeTest();
+      console.log(globalVar);
+    </script>
+  </body>
+</html>

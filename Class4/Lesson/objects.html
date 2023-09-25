@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Objects Page
+    <div id="test">On</div>
+    <button onclick="changeText()">Button</button>
+    <script>
+        // let jamie = { 
+        //     name: 'jamie',
+        //     greeting: function(person) {
+        //         return 'Hello ' + person
+        //                }
+        // }
+        
+        // let jamieGreeting = jamie.greeting('Jake')
+
+        // console.log(jamieGreeting)
+
+        let testDiv = document.getElementById('test');
+        
+            function changeText() {
+                let content = testDiv
+                if (content.innerText === 'On') {
+                    content.innerText = 'Off';
+                    document.body.style.background = 'black';
+                    document.body.style.color = 'white';
+                } else {
+                    content.innerText = 'On'
+                    document.body.style.background = 'white'
+                    document.body.style.color = 'black'
+                }
+            }
+
+
+
+            // let name = 'brooklyn'
+            // console.log(name.toUpperCase(1))
+
+    </script>
+</body>
+</html>

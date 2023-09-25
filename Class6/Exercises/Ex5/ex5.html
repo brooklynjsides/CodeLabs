@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      person = {
+        name: "Brooklyn",
+        age: "21",
+      };
+      person.logNameAge = function () {
+        console.log(`${this.name} is ${21} years old.`);
+      };
+
+      person.logNameAge();
+
+      ////////////////
+
+      class Person2 {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+
+        get nameAge() {
+          return this.nameADD;
+        }
+
+        get age() {
+          return this._age;
+        }
+
+        set age(newAge) {
+          if (newAge >= 0) {
+            this._age = newAge;
+          } else {
+            console.log("Cannot be negative years old");
+          }
+        }
+
+        static info() {
+          return "This is a person class.";
+        }
+
+        nameAdd() {
+          return this.name + " is " + this.age + " years old";
+        }
+      }
+
+      let myWholeNameAge = new Person2("John", "30");
+      const infoOutput = Person2.info();
+      console.log(infoOutput);
+      console.log(myWholeNameAge.nameAdd());
+      const instInfoOutput = myWholeNameAge.constructor.info();
+      console.log(instInfoOutput);
+      console.log(myWholeNameAge.age);
+    </script>
+  </body>
+</html>

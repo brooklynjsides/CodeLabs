@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      person = {
+        name: "Brooklyn",
+        age: "21",
+      };
+      person.logNameAge = function () {
+        console.log(`${this.name} is ${21} years old.`);
+      };
+
+      person.logNameAge();
+
+      ////////////////
+
+      class Person2 {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+
+        get nameAge() {
+          return this.nameADD;
+        }
+
+        nameAdd() {
+          return this.name + " is " + this.age + " years old";
+        }
+      }
+
+      let myWholeNameAge = new Person2("John", "30");
+      console.log(myWholeNameAge.nameAdd());
+
+      let myWholeNameAge2 = new Person2("Cook", "45");
+      console.log(myWholeNameAge2.nameAdd());
+    </script>
+  </body>
+</html>

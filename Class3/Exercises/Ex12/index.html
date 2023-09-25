@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="myList"></ul>
+<script>
+
+let data = ["Fish - $1.99", "Meat - $2.99", "Fruit - $3.99"];
+let list = document.getElementById("myList");
+for ( i = 0; i < data.length; ++i) { 
+let li = document.createElement('li');
+li.innerText = data[i];
+list.appendChild(li);
+}
+</script>
+
+
+
+</body>
+</html>

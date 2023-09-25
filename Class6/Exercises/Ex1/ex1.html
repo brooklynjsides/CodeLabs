@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let animal = {
+        species: "lion",
+        color: "tan",
+      };
+      function callAnimal() {
+        species = "lion";
+        this.animal = species;
+        console.log(animal);
+      }
+      console.log(callAnimal());
+
+      //////////////////////
+
+      class Global {
+        constructor(globalName) {
+          this.name = globalName;
+        }
+        callGlobal() {
+          console.log(`${this.name}`);
+        }
+      }
+
+      const globalname = new Global("1: Global This Function");
+      globalname.callGlobal();
+
+      ///////////////////////////////////////////////////
+
+      let arrFunc = {
+        friendName: "Jarrid",
+        friendString: () => {
+          `${this.friendString} is my friend`;
+        },
+      };
+      console.log(arrFunc.friendName);
+    </script>
+  </body>
+</html>
