@@ -1,0 +1,1 @@
+make a todo application, add todo, make it pretty

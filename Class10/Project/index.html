@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="tDLHeader">ToDo List Header</p>
+      </header>
+      <div class="formDiv">
+        <form class="form1">
+          <ul class="TDLUL">
+            <li class="TDLLI">
+              <textarea
+                class="TDLTextArea"
+                placeholder="Type Your What You Plan To Do Here!"
+              ></textarea>
+            </li>
+          </ul>
+          <button class="addBtn" type="button">Add Item</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      const addLiBtn = document.querySelector(".addBtn");
+      const uList = document.querySelector(".TDLUL");
+
+      addLiBtn.addEventListener("click", () => {
+        const lItem = document.createElement("li");
+        const textArea = document.createElement("textarea");
+        textArea.className = "TDLTextArea";
+        textArea.placeholder = "What do you want to do?";
+        lItem.className = "TDLLI";
+
+        const removeButton = document.createElement("button");
+        removeButton.textContent = "Remove";
+        removeButton.className = "removeBtn";
+        removeButton.addEventListener("click", () => {
+          const container = lItem.parentElement;
+          container.parentNode.removeChild(container);
+        });
+        if (uList.children.length > 0) {
+        }
+        lItem.appendChild(textArea);
+        const divContainer = document.createElement("div");
+        divContainer.appendChild(lItem);
+        divContainer.appendChild(removeButton);
+        uList.appendChild(divContainer);
+      });
+    </script>
+  </body>
+</html>

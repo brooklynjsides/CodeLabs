@@ -1,0 +1,70 @@
+html {
+  /* background-color: rgb(242, 168, 242); */
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgb(242, 168, 242), rgb(243, 138, 138));
+}
+
+.tDLHeader {
+  font-size: 50px;
+  text-align: center;
+}
+
+.TDLTextArea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3rem;
+  background-color: rgba(253, 253, 201, 0.486);
+  font-size: 21px;
+}
+
+.formDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.TDLContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  align-items: flex-start;
+}
+
+/* LISTS */
+.TDULUL {
+  list-style: none;
+  padding: 0;
+}
+
+.TDLLI {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* BUTTONS */
+.addBtn {
+  height: 5em;
+  width: 5em;
+  border-radius: 15px;
+  background-color: dodgerblue;
+  font-weight: bold;
+  justify-self: center;
+  cursor: pointer;
+  margin-left: 40rem;
+}
+
+.removeBtn {
+  margin-right: 50%;
+  margin-left: 50%;
+  cursor: pointer;
+  background-color: crimson;
+  border-radius: 15px;
+  height: 1.5rem;
+  max-width: 100%;
+  margin: auto;
+}
