@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Brooklyn';
+
+  quote = '';
+
+  boxes = [0, 0, 0];
+
 }
