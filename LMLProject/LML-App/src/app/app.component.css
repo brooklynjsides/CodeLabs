@@ -1,0 +1,17 @@
+.container {
+  display: block;
+  height: 500px;
+  width: 500px;
+  padding: 2em;
+}
+
+/* body {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+} */
+
+.slideshowH1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}

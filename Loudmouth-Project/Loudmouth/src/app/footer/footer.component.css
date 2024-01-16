@@ -1,0 +1,20 @@
+body {
+  overflow: hidden;
+}
+
+.controlPanel {
+  background: rgb(105, 2, 2);
+  justify-content: center;
+  position: absolute;
+  top: 700px; /* Header Height */
+  bottom: 0px; /* Footer Height */
+  left: 10vw;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.controlPanelButtons {
+  display: flex;
+  justify-content: left;
+}

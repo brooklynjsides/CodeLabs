@@ -1,0 +1,7 @@
+Make routines in shared folder and make templates the different pages 
+
+
+1. Templates, create goals list and store
+2. Remove home/ make profile default 
+3. Make landing default for "/"
+4. Make navbar work for different sized screen, add dropdown 

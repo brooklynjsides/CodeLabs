@@ -1,0 +1,21 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <input
+              [(ngModel)]="searchQuery"
+              type="search"
+              class="form-control"
+              placeholder="Search for Artists"
+              name="search"
+            />
+          </div>
+          {{ searchQuery }}
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<pre>{{ artists | json }}</pre>
